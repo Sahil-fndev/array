@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"">
+    <link rel=" stylesheet" href="./css/styles.css">
+    <title>Array</title>
+</head>
+
+<body onload="getCurrentYear()">
+
+    <!--                             header of the page                                            -->
+    <header>
+        <h1>Array</h1>
+        <p class="def">A array is a special object that can store multiple items at once.</p>
+    </header>
+
+    <main>
+
+        <!--              container contain two forms, one of them will use for store array's size and second will use for array's item -->
+
+        <div class="container">
+            <div class="form1">
+                <form role="form" method="post" onsubmit="return false">
+                    <label for="arraysize">Size of Array: <input type="number" name="arraysize" id="arraysize"
+                            autocomplete="off" autofocus required></label>
+                </form>
+            </div>
+            <div class="form2">
+                <form role="form" method="post" onsubmit="return false">
+                    <label for="arrayitem">Array's Item (in number): <input type="number" name="arrayitem"
+                            id="arrayitem" required autocomplete="off"></label>
+                </form>
+            </div>
+            <div class="fillarray">
+                <p><button type="submit" id="btn">Push()</button></p>
+            </div>
+
+            <!--    it show output whenever user click push() button it shows size of array and array's items -->
+            <div class="result">
+                <p>
+                    Array:
+                    <span id="arrayOutput" class="arrayOutput"></span>
+                </p>
+                <p class="note" id="warn">Warning! <span id="info"></span></p>
+
+                <p>
+                    Array's Size:
+                    <span id="size" class="arrayOutput"></span>
+            </div>
+        </div>
+    </main>
+
+    <!--                                footer                                             -->
+
+    <footer id="footer">
+        <div class="copyright_container">
+            <p>&copy; Copyright <span id="year"></span></p>
+        </div>
+        <div class="author">
+            <p>Designed and developed by Sahil</p>
+        </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
